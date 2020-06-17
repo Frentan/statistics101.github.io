@@ -57,38 +57,38 @@ To distinguish between nominal and ordinal, ask *"does this have an specific ord
 As stated above, measures of central tendency, also known as position measures, tell us how **concentrated** data is.
 
 ### Mean
-There are various types of means, all based on the concept of an average --- i.e. a single number taken as representative of a list of numbers. The most known is the **arithmetic mean**, which is simply the sum of all elements in a set divided by the number of elements of said set. For a sample ![Sample](https://bit.ly/3edfoEf) :
+There are various types of means, all based on the concept of an average --- i.e. a single number taken as representative of a list of numbers. The most known is the **arithmetic mean**, which is simply the sum of all elements in a set divided by the number of elements of said set. For a sample ![Sample](http://www.sciweavers.org/tex2img.php?eq=x_%7B1%7D%2Cx_%7B2%7D%2C%5Cldots%20%2Cx_%7Bn%7D&bc=Transparent&fc=Black&im=png&fs=12&ff=modern&edit=0) :
 
-![Arithmetic Mean](https://bit.ly/2zKeAHW)
+![Arithmetic Mean](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7B%5Cbar%20%7Bx%7D%7D%3D%7B%5Cfrac%20%7B1%7D%7Bn%7D%7D%5Cleft%28%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%7Bx_%7Bi%7D%7D%5Cright%29%3D%7B%5Cfrac%20%7Bx_%7B1%7D%2Bx_%7B2%7D%2B%5Ccdots%20%2Bx_%7Bn%7D%7D%7Bn%7D%7D%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
 
 It is colloquially just called *the* average, but it's better to specify depending in context. For a variable with independent realizations (where the occurrence of each does not affect the probability of occurrence of the others), it is the theoretical expected value.
 
 A second type is the **geometric mean**. Instead of the sum of elements, it uses the product of their values, being the *n*th root of this:
 
-![Geometric Mean](https://bit.ly/3fA0VT3)
+![Geometric Mean](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7B%5Cbar%20%7Bx%7D%7D%3D%5Cleft%28%5Cprod%20_%7Bi%3D1%7D%5E%7Bn%7Dx_%7Bi%7D%5Cright%29%5E%7B%5Cfrac%20%7B1%7D%7Bn%7D%7D%3D%7B%5Csqrt%5B%7Bn%7D%5D%7Bx_%7B1%7Dx_%7B2%7D%5Ccdots%20x_%7Bn%7D%7D%7D%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
 
 This measure is better when we are looking at sets interpreted according to their product, such as rates of growth or widely different magnitudes.
 
 Thirdly, we have the **harmonic mean**. It's defined by the number of elements divided by the sum of their reciprocals (multiplicative inverses). I know it sounds bewildering, but in this case the formula makes it clearer:
 
-![Harmonic Mean](https://bit.ly/2YKepor)
+![Harmonic Mean](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7B%5Cbar%20%7Bx%7D%7D%3Dn%5Cleft%28%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%7B%5Cfrac%20%7B1%7D%7Bx_%7Bi%7D%7D%7D%5Cright%29%5E%7B-1%7D%7D%3D%7B%5Cfrac%20%7Bn%7D%7B%7B%5Cfrac%20%7B1%7D%7Bx_%7B1%7D%7D%7D%2B%7B%5Cfrac%20%7B1%7D%7Bx_%7B2%7D%7D%7D%2B%5Ccdots%20%2B%7B%5Cfrac%20%7B1%7D%7Bx_%7Bn%7D%7D%7D%7D%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
 
 This is used for sets defined in relation to some unit --- e.g. speed (distance per unit of time) or certain price indices in economics (prices across time periods).
 
 These three are known as the Pythagorean means. All together:
 
-![Pythagorean Means](https://bit.ly/2AJf1CE)
+![Pythagorean Means](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7B%5Cbegin%7Baligned%7D%5Coperatorname%20%7BAM%7D%20%5Cleft%28x_%7B1%7D%2C%5C%3B%5Cldots%20%2C%5C%3Bx_%7Bn%7D%5Cright%29%26%3D%7B%5Cfrac%20%7B1%7D%7Bn%7D%7D%5Cleft%28x_%7B1%7D%2B%5C%3B%5Ccdots%20%5C%3B%2Bx_%7Bn%7D%5Cright%29%5C%5C%5B9pt%5D%5Coperatorname%20%7BGM%7D%20%5Cleft%28x_%7B1%7D%2C%5C%3B%5Cldots%20%2C%5C%3Bx_%7Bn%7D%5Cright%29%26%3D%7B%5Csqrt%5B%7Bn%7D%5D%7B%5Cleft%5Cvert%20x_%7B1%7D%5Ctimes%20%5C%2C%5Ccdots%20%5C%2C%5Ctimes%20x_%7Bn%7D%5Cright%5Cvert%20%7D%7D%5C%5C%5B9pt%5D%5Coperatorname%20%7BHM%7D%20%5Cleft%28x_%7B1%7D%2C%5C%3B%5Cldots%20%2C%5C%3Bx_%7Bn%7D%5Cright%29%26%3D%7B%5Cfrac%20%7Bn%7D%7B%5Cdisplaystyle%20%7B%5Cfrac%20%7B1%7D%7Bx_%7B1%7D%7D%7D%2B%5C%3B%5Ccdots%20%5C%3B%2B%7B%5Cfrac%20%7B1%7D%7Bx_%7Bn%7D%7D%7D%7D%7D%5Cend%7Baligned%7D%7D%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
 
 They also follow these inequalities:
 
-![Mean Inequalities](https://bit.ly/2CcFskx)
+![Mean Inequalities](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%5Cmathrm%20%7BAM%7D%20%5Cgeq%20%5Cmathrm%20%7BGM%7D%20%5Cgeq%20%5Cmathrm%20%7BHM%7D%20%5C%2C%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
 
 
 Notice they are in alphabetical order. The equality case only applies if all set elements have the exact same value. Let's put it all together with a simple example. Given the numbers 4, 36, 45, 50, and 75:
 
 ![Example AM](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7BAM%7D=%7B%5Cfrac%20%7B4%2b36%2b45%2b50%2b75%7D%7B5%7D%7D=%7B%5Cfrac%20%7B210%7D%7B5%7D%7D=42%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
-![Example GM](https://bit.ly/37FU47R)
-![Example HM](https://bit.ly/2NdonJr)
+![Example GM](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7BGM%7D%3D%284%5Ctimes%2036%5Ctimes%2045%5Ctimes%2050%5Ctimes%2075%29%5E%7B%5Cfrac%20%7B1%7D%7B5%7D%7D%3D%7B%5Csqrt%5B%7B5%7D%5D%7B24%5C%3B300%5C%3B000%7D%7D%3D30%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Example HM](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7BHM%7D%3D%7B%5Cfrac%20%7B5%7D%7B%7B%5Ctfrac%20%7B1%7D%7B4%7D%7D%2B%7B%5Ctfrac%20%7B1%7D%7B36%7D%7D%2B%7B%5Ctfrac%20%7B1%7D%7B45%7D%7D%2B%7B%5Ctfrac%20%7B1%7D%7B50%7D%7D%2B%7B%5Ctfrac%20%7B1%7D%7B75%7D%7D%7D%7D%3D%7B%5Cfrac%20%7B5%7D%7B%5C%3B%7B%5Ctfrac%20%7B1%7D%7B3%7D%7D%5C%3B%7D%7D%3D15%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
 
 We can see that the results satisfy the inequalities shown above.
 
