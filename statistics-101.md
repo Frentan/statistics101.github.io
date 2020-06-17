@@ -76,7 +76,7 @@ This measure is better when we are looking at sets interpreted according to thei
 Thirdly, we have the **harmonic mean**. It's defined by the number of elements divided by the sum of their reciprocals (multiplicative inverses). I know it sounds bewildering, but in this case the formula makes it clearer:
 
 $$
-{\displaystyle {\bar {x}}=n\left(\sum _{i=1}^{n}{\frac {1}{x_{i}}}\right)^{-1}}={\frac {n}{{\frac {1}{x_{1}}}+{\frac {1}{x_{2}}}+\cdots +{\frac {1}{x_{n}}}}}
+{\displaystyle {\bar {x}}={\frac {1}{{\dfrac {1}{n}}\displaystyle \sum \limits _{i=1}^{n}{\frac {1}{x_{i}}}}}={\frac {n}{{\frac {1}{x_{1}}}+{\frac {1}{x_{2}}}+\cdots +{\frac {1}{x_{n}}}}}}
 $$
 
 This is used for sets defined in relation to some unit --- e.g. speed (distance per unit of time) or certain price indices in economics (prices across time periods).
