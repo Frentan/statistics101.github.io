@@ -15,8 +15,8 @@ Let's take a closer look at each one:
 
 ### Descriptive Statistics
 Focuses on organizing and describing data. Can be further subdivided into two:
- - Position or central tendency measurements, such as mean, median, mode, and quantiles --- i.e. **how concentrated data is**.
- - Dispersion measurements, such as standard deviation, variance, and covariance --- i.e. **how scattered data is, *in* relation to a position measurement**.
+ - Measures of central tendency, such as mean, median, mode, and quantiles --- i.e. **how concentrated data is**.
+ - Measures of dispersion, such as standard deviation, variance, and covariance --- i.e. **how scattered data is, *in* relation to a measure of central tendency**.
 
 ### Probability
 Allows us to describe phenomena that present uncertainty or randomness in a numerical form.
@@ -121,6 +121,16 @@ There are several ways to calculate asymmetry. Pearson's first and second coeffi
 "Pearson’s first coefficient of skewness is useful if the data exhibit a strong mode. If the data have a weak mode or multiple modes, Pearson’s second coefficient may be preferable, as it does not rely on mode as a measure of central tendency."
 
 ![Pearson's Second Coefficient of Skewness](http://www.sciweavers.org/tex2img.php?eq=Sk_2%20=%20%5Cfrac%7B3%28%5Cbar%7Bx%7D%20-%20Median%29%7D%7Bs%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+## Kurtosis
+
+"Kurtosis (from Greek: κυρτός, kyrtos or kurtos, meaning "curved, arching") is a measure of the "tailedness" of the probability distribution of a real-valued random variable. Like skewness, kurtosis describes the shape of a probability distribution and there are different ways of quantifying it for a theoretical distribution and corresponding ways of estimating it from a sample from a population.
+
+This number is related to the tails of the distribution, not its peak;[2] hence, the sometimes-seen characterization of kurtosis as "peakedness" is incorrect. For this measure, higher kurtosis corresponds to greater extremity of deviations (or outliers), and not the configuration of data near the mean.
+
+The kurtosis of any univariate normal distribution is 3. It is common to compare the kurtosis of a distribution to this value. Distributions with kurtosis less than 3 are said to be platykurtic, although this does not imply the distribution is "flat-topped" as is sometimes stated. Rather, it means the distribution produces fewer and less extreme outliers than does the normal distribution. An example of a platykurtic distribution is the uniform distribution, which does not produce outliers. Distributions with kurtosis greater than 3 are said to be leptokurtic. An example of a leptokurtic distribution is the Laplace distribution, which has tails that asymptotically approach zero more slowly than a Gaussian, and therefore produces more outliers than the normal distribution. It is also common practice to use an adjusted version of Pearson's kurtosis, the excess kurtosis, which is the kurtosis minus 3, to provide the comparison to the standard normal distribution."
+
+![Kurtosis](http://grapherhelp.goldensoftware.com/Resources/image/kurtosis.png)
+
 TO BE CONTINUED...
 *To improve: change equations to LaTeX, instead of linked images.*
 
