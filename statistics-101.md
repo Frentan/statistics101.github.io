@@ -57,38 +57,40 @@ To distinguish between nominal and ordinal, ask *"does this have an specific ord
 As stated above, measures of central tendency, also known as position measures, tell us how **concentrated** data is.
 
 ### Mean
-There are various types of means, all based on the concept of an average --- i.e. a single number taken as representative of a list of numbers. The most known is the **arithmetic mean**, which is simply the sum of all elements in a set divided by the number of elements of said set. For a sample ![Sample](http://www.sciweavers.org/tex2img.php?eq=x_%7B1%7D%2Cx_%7B2%7D%2C%5Cldots%20%2Cx_%7Bn%7D&bc=Transparent&fc=Black&im=png&fs=12&ff=modern&edit=0) :
+There are various types of means, all based on the concept of an average --- i.e. a single number taken as representative of a list of numbers. The most known is the **arithmetic mean**, which is simply the sum of all elements in a set divided by the number of elements of said set. For a sample ![Sample](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/sample.png) :
 
-![Arithmetic Mean](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7B%5Cbar%20%7Bx%7D%7D%3D%7B%5Cfrac%20%7B1%7D%7Bn%7D%7D%5Cleft%28%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%7Bx_%7Bi%7D%7D%5Cright%29%3D%7B%5Cfrac%20%7Bx_%7B1%7D%2Bx_%7B2%7D%2B%5Ccdots%20%2Bx_%7Bn%7D%7D%7Bn%7D%7D%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Arithmetic Mean](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/arithmetic_mean.png)
 
 It is colloquially just called *the* average, but it's better to specify depending in context. For a variable with independent realizations (where the occurrence of each does not affect the probability of occurrence of the others), it is the theoretical expected value.
 
 A second type is the **geometric mean**. Instead of the sum of elements, it uses the product of their values, being the *n*th root of this:
 
-![Geometric Mean](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7B%5Cbar%20%7Bx%7D%7D%3D%5Cleft%28%5Cprod%20_%7Bi%3D1%7D%5E%7Bn%7Dx_%7Bi%7D%5Cright%29%5E%7B%5Cfrac%20%7B1%7D%7Bn%7D%7D%3D%7B%5Csqrt%5B%7Bn%7D%5D%7Bx_%7B1%7Dx_%7B2%7D%5Ccdots%20x_%7Bn%7D%7D%7D%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Geometric Mean](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/geometric_mean.png)
 
 This measure is better when we are looking at sets interpreted according to their product, such as rates of growth or widely different magnitudes.
 
 Thirdly, we have the **harmonic mean**. It's defined by the number of elements divided by the sum of their reciprocals (multiplicative inverses). I know it sounds bewildering, but in this case the formula makes it clearer:
 
-![Harmonic Mean](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7B%5Cbar%20%7Bx%7D%7D%3Dn%5Cleft%28%5Csum%20_%7Bi%3D1%7D%5E%7Bn%7D%7B%5Cfrac%20%7B1%7D%7Bx_%7Bi%7D%7D%7D%5Cright%29%5E%7B-1%7D%7D%3D%7B%5Cfrac%20%7Bn%7D%7B%7B%5Cfrac%20%7B1%7D%7Bx_%7B1%7D%7D%7D%2B%7B%5Cfrac%20%7B1%7D%7Bx_%7B2%7D%7D%7D%2B%5Ccdots%20%2B%7B%5Cfrac%20%7B1%7D%7Bx_%7Bn%7D%7D%7D%7D%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Harmonic Mean](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/harmonic_mean.png)
 
 This is used for sets defined in relation to some unit --- e.g. speed (distance per unit of time) or certain price indices in economics (prices across time periods).
 
 These three are known as the Pythagorean means. All together:
 
-![Pythagorean Means](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7B%5Cbegin%7Baligned%7D%5Coperatorname%20%7BAM%7D%20%5Cleft%28x_%7B1%7D%2C%5C%3B%5Cldots%20%2C%5C%3Bx_%7Bn%7D%5Cright%29%26%3D%7B%5Cfrac%20%7B1%7D%7Bn%7D%7D%5Cleft%28x_%7B1%7D%2B%5C%3B%5Ccdots%20%5C%3B%2Bx_%7Bn%7D%5Cright%29%5C%5C%5B9pt%5D%5Coperatorname%20%7BGM%7D%20%5Cleft%28x_%7B1%7D%2C%5C%3B%5Cldots%20%2C%5C%3Bx_%7Bn%7D%5Cright%29%26%3D%7B%5Csqrt%5B%7Bn%7D%5D%7B%5Cleft%5Cvert%20x_%7B1%7D%5Ctimes%20%5C%2C%5Ccdots%20%5C%2C%5Ctimes%20x_%7Bn%7D%5Cright%5Cvert%20%7D%7D%5C%5C%5B9pt%5D%5Coperatorname%20%7BHM%7D%20%5Cleft%28x_%7B1%7D%2C%5C%3B%5Cldots%20%2C%5C%3Bx_%7Bn%7D%5Cright%29%26%3D%7B%5Cfrac%20%7Bn%7D%7B%5Cdisplaystyle%20%7B%5Cfrac%20%7B1%7D%7Bx_%7B1%7D%7D%7D%2B%5C%3B%5Ccdots%20%5C%3B%2B%7B%5Cfrac%20%7B1%7D%7Bx_%7Bn%7D%7D%7D%7D%7D%5Cend%7Baligned%7D%7D%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Pythagorean Means](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/pythagorean_means.png)
 
 They also follow these inequalities:
 
-![Mean Inequalities](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%5Cmathrm%20%7BAM%7D%20%5Cgeq%20%5Cmathrm%20%7BGM%7D%20%5Cgeq%20%5Cmathrm%20%7BHM%7D%20%5C%2C%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Mean Inequalities](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/mean_inequalities.png)
 
 
 Notice they are in alphabetical order. The equality case only applies if all set elements have the exact same value. Let's put it all together with a simple example. Given the numbers 4, 36, 45, 50, and 75:
 
-![Example AM](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7BAM%7D=%7B%5Cfrac%20%7B4%2b36%2b45%2b50%2b75%7D%7B5%7D%7D=%7B%5Cfrac%20%7B210%7D%7B5%7D%7D=42%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
-![Example GM](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7BGM%7D%3D%284%5Ctimes%2036%5Ctimes%2045%5Ctimes%2050%5Ctimes%2075%29%5E%7B%5Cfrac%20%7B1%7D%7B5%7D%7D%3D%7B%5Csqrt%5B%7B5%7D%5D%7B24%5C%3B300%5C%3B000%7D%7D%3D30%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
-![Example HM](http://www.sciweavers.org/tex2img.php?eq=%7B%5Cdisplaystyle%20%7BHM%7D%3D%7B%5Cfrac%20%7B5%7D%7B%7B%5Ctfrac%20%7B1%7D%7B4%7D%7D%2B%7B%5Ctfrac%20%7B1%7D%7B36%7D%7D%2B%7B%5Ctfrac%20%7B1%7D%7B45%7D%7D%2B%7B%5Ctfrac%20%7B1%7D%7B50%7D%7D%2B%7B%5Ctfrac%20%7B1%7D%7B75%7D%7D%7D%7D%3D%7B%5Cfrac%20%7B5%7D%7B%5C%3B%7B%5Ctfrac%20%7B1%7D%7B3%7D%7D%5C%3B%7D%7D%3D15%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Example AM](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/example_am.png)
+
+![Example GM](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/example_gm.png)
+
+![Example HM](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/example_hm.png)
 
 We can see that the results satisfy the inequalities shown above.
 
@@ -108,29 +110,25 @@ Quantiles are simply the result of dividing your data into equal and adjacent su
 
 Skewness is the measure of asymmetry of your data. With a perfectly symmetrical, or normal, distribution (the famous bell curve), our position measures will be equal and skewness with be equal to zero. However, many data sets we encounter are not symmetrical, and so their position measures will vary:
 
-![Skewness](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Relationship_between_mean_and_median_under_different_skewness.png/640px-Relationship_between_mean_and_median_under_different_skewness.png)
+![Skewness](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/skewness_wikipedia.png)
 A negative or left-skewed distribution has a long tail on the left, and a skewness lower than zero. The median and mean also move to the left of the peak where the mode is, with the mean further away from it. The opposite is true for a positive or right-skewed distribution.
 
 There are several ways to calculate asymmetry. Pearson's first and second coefficients of skewness are the ones most used. For the first, subtract the mode from the mean and divide the difference by the standard deviation of the sample:
 
-![Pearson's First Coefficient of Skewness](http://www.sciweavers.org/tex2img.php?eq=Sk_1%20%3D%20%5Cfrac%7B%5Cbar%7Bx%7D%20-%20Mode%7D%7Bs%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Pearson's First Coefficient of Skewness](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/pearson_skewness_1.png)
 ... Don't worry, we'll see what exactly standard deviation is later. (Edit sentence?)
 
-"Pearson’s second coefficient of skewness, or Pearson median skewness, subtracts the median from the mean, multiplies the difference by three and divides the product by the standard deviation."
+*"Pearson’s second coefficient of skewness, or Pearson median skewness, subtracts the median from the mean, multiplies the difference by three and divides the product by the standard deviation."
+"Pearson’s first coefficient of skewness is useful if the data exhibit a strong mode. If the data have a weak mode or multiple modes, Pearson’s second coefficient may be preferable, as it does not rely on mode as a measure of central tendency."*
 
-"Pearson’s first coefficient of skewness is useful if the data exhibit a strong mode. If the data have a weak mode or multiple modes, Pearson’s second coefficient may be preferable, as it does not rely on mode as a measure of central tendency."
-
-![Pearson's Second Coefficient of Skewness](http://www.sciweavers.org/tex2img.php?eq=Sk_2%20=%20%5Cfrac%7B3%28%5Cbar%7Bx%7D%20-%20Median%29%7D%7Bs%7D&bc=Transparent&fc=Black&im=png&fs=18&ff=modern&edit=0)
+![Pearson's Second Coefficient of Skewness](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/pearson_skewness_2.png)
 ## Kurtosis
 
-"Kurtosis (from Greek: κυρτός, kyrtos or kurtos, meaning "curved, arching") is a measure of the "tailedness" of the probability distribution of a real-valued random variable. Like skewness, kurtosis describes the shape of a probability distribution and there are different ways of quantifying it for a theoretical distribution and corresponding ways of estimating it from a sample from a population.
-
+*"Kurtosis (from Greek: κυρτός, kyrtos or kurtos, meaning "curved, arching") is a measure of the "tailedness" of the probability distribution of a real-valued random variable. Like skewness, kurtosis describes the shape of a probability distribution and there are different ways of quantifying it for a theoretical distribution and corresponding ways of estimating it from a sample from a population.
 This number is related to the tails of the distribution, not its peak;[2] hence, the sometimes-seen characterization of kurtosis as "peakedness" is incorrect. For this measure, higher kurtosis corresponds to greater extremity of deviations (or outliers), and not the configuration of data near the mean.
+The kurtosis of any univariate normal distribution is 3. It is common to compare the kurtosis of a distribution to this value. Distributions with kurtosis less than 3 are said to be platykurtic, although this does not imply the distribution is "flat-topped" as is sometimes stated. Rather, it means the distribution produces fewer and less extreme outliers than does the normal distribution. An example of a platykurtic distribution is the uniform distribution, which does not produce outliers. Distributions with kurtosis greater than 3 are said to be leptokurtic. An example of a leptokurtic distribution is the Laplace distribution, which has tails that asymptotically approach zero more slowly than a Gaussian, and therefore produces more outliers than the normal distribution. It is also common practice to use an adjusted version of Pearson's kurtosis, the excess kurtosis, which is the kurtosis minus 3, to provide the comparison to the standard normal distribution."*
 
-The kurtosis of any univariate normal distribution is 3. It is common to compare the kurtosis of a distribution to this value. Distributions with kurtosis less than 3 are said to be platykurtic, although this does not imply the distribution is "flat-topped" as is sometimes stated. Rather, it means the distribution produces fewer and less extreme outliers than does the normal distribution. An example of a platykurtic distribution is the uniform distribution, which does not produce outliers. Distributions with kurtosis greater than 3 are said to be leptokurtic. An example of a leptokurtic distribution is the Laplace distribution, which has tails that asymptotically approach zero more slowly than a Gaussian, and therefore produces more outliers than the normal distribution. It is also common practice to use an adjusted version of Pearson's kurtosis, the excess kurtosis, which is the kurtosis minus 3, to provide the comparison to the standard normal distribution."
-
-![Kurtosis](http://grapherhelp.goldensoftware.com/Resources/image/kurtosis.png)
-
+![Kurtosis](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/kurtosis.png)
 TO BE CONTINUED...
 *To improve: change equations to LaTeX, instead of linked images.*
 
