@@ -121,21 +121,15 @@ Don't worry, we'll cover what standard deviation is later. Pearson's first coeff
 
 ## Kurtosis
 
-*"Kurtosis (from Greek: κυρτός, kyrtos or kurtos, meaning "curved, arching") is a measure of the "tailedness" of the probability distribution of a real-valued random variable. Like skewness, kurtosis describes the shape of a probability distribution and there are different ways of quantifying it for a theoretical distribution and corresponding ways of estimating it from a sample from a population.
-This number is related to the tails of the distribution, not its peak;[2] hence, the sometimes-seen characterization of kurtosis as "peakedness" is incorrect. For this measure, higher kurtosis corresponds to greater extremity of deviations (or outliers), and not the configuration of data near the mean.
-The kurtosis of any univariate normal distribution is 3 (mesokurtic, normal distribution). It is common to compare the kurtosis of a distribution to this value. Distributions with kurtosis less than 3 are said to be platykurtic, although this does not imply the distribution is "flat-topped" as is sometimes stated. Rather, it means the distribution produces fewer and less extreme outliers than does the normal distribution. An example of a platykurtic distribution is the uniform distribution, which does not produce outliers. Distributions with kurtosis greater than 3 are said to be leptokurtic. An example of a leptokurtic distribution is the Laplace distribution, which has tails that asymptotically approach zero more slowly than a Gaussian, and therefore produces more outliers than the normal distribution. It is also common practice to use an adjusted version of Pearson's kurtosis, the excess kurtosis, which is the kurtosis minus 3, to provide the comparison to the standard normal distribution."*
+We can think of kurtosis as the "tailedness" of the data. The higher it is, the greater the extension of data farther from the mean and the more outliers, and vice versa. A normal distribution (more on it later) has a kurtosis value of 3 (**mesokurtic**). Distributions with a lower value are called **platykurtic** (less outliers) and with a higher one **leptokurtic** (more outliers).
 
-Easy proxy to calculate: Percentile coefficient of kurtosis (adjusted to zero):
-K = Q3 - Q1 / 2(P90 - P10) all MINUS 3
-
-Q3 - Q1 = IQR (interquartile range), commonly seen as the box in the boxplot
-
-OR... K = QD / P90 - P10 all MINUS 3
-
-Where QD (quartile deviation) = Q3 - Q1 /2
-QD aka semi-interquartile range (useful dor studying distrs where samples are concentrated in the middle values)
+Using the standard value 3 is referred to as Pearson's kurtosis (this guy is everywhere). It's common to adjust this by subtracting 3 so the normal kurtosis becomes zero. This is called excess kurtosis. Graphically:
 
 ![Kurtosis](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/kurtosis.png)
+A painless approach to calculating it is to use the percentile coefficient of kurtosis:
+
+![Percentile Coefficient of Kurtosis](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/coefficient_of_kurtosis.png)
+The distance between Q3 and Q1 is the interquartile range (IQR), commonly seen as the "box" of a boxplot.
 
 ## Measures of Dispersion
 
