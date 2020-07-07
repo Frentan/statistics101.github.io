@@ -61,7 +61,7 @@ There are various types of means, all based on the concept of an average --- i.e
 
 ![Arithmetic Mean](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/arithmetic_mean.png)
 
-It is colloquially just called *the* average, but it's better to specify depending in context. For a variable with independent realizations (where the occurrence of each does not affect the probability of occurrence of the others), it is the theoretical expected value.
+It is colloquially just called *the* average, but it's better to specify depending in context. For a variable with independent realizations (where the occurrence of each does not affect the probability of occurrence of the others), it is the theoretical **expected value**.
 
 A second type is the **geometric mean**. Instead of the sum of elements, it uses the product of their values, being the *n*th root of this:
 
@@ -141,37 +141,30 @@ Simply the difference between the largest and smallest values in the sample. It 
 ![Range](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/range.png)
 
 ### Variance
-"measures how far a set of numbers are spread out from their average value"
+As suggested by the name, measures how far data is spread from its average value:
 
 ![Variance](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/variance.png)
+However, it's not expressed in any particular unit, so it's not very useful as an indicator by itself.
 
 ### Standard Deviation
-"is a measure of the amount of variation or dispersion of a set of values.[1] A low standard deviation indicates that the values tend to be close to the mean (also called the expected value) of the set, while a high standard deviation indicates that the values are spread out over a wider range. " "A useful property of the standard deviation is that, unlike the variance, it is expressed in the same units as the data."
-
-"In addition to expressing the variability of a population, the standard deviation is commonly used to measure confidence in statistical conclusions. For example, the margin of error in polling data is determined by calculating the expected standard deviation in the results if the same poll were to be conducted multiple times. This derivation of a standard deviation is often called the "standard error" of the estimate or "standard error of the mean" when referring to a mean. It is computed as the standard deviation of all the means that would be computed from that population if an infinite number of samples were drawn and a mean for each sample were computed. "
-
-"In science, many researchers report the standard deviation of experimental data, and by convention, only effects more than two standard deviations away from a null expectation are considered statistically significant—normal random error or variation in the measurements is in this way distinguished from likely genuine effects or associations. The standard deviation is also important in finance, where the standard deviation on the rate of return on an investment is a measure of the volatility of the investment. "
-
-"68–95–99.7 rule, also known as the empirical rule, is a shorthand used to remember the percentage of values that lie within a band around the mean in a normal distribution with a width of two, four and six standard deviations, respectively; more precisely, 68.27%, 95.45% and 99.73% of the values lie within one, two and three standard deviations of the mean, respectively."
+Like variance, it measures the dispersion of a sample. Unlike variance, it's expressed in the same units as the data. The lower it is, the more the values tend to be close to the mean, and vice versa (remember that the arithmetic mean is the theoretical expected value as well). To calculate it, simply take the square root of the variance:
 
 ![Standard Deviation](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/standard_deviation.png)
+Standard deviation is often used to measure the *confidence* of statistical conclusions --- e.g. the margin of error in electoral and similar polls. You can often hear this being called the **standard error**. It is determined by evaluating all the means calculated from a population if an "infinite" number of samples were to be drawn from it. Likewise, it's used in science as a measure of *significance* when only results higher than two standard deviations from the mean are considered statistically significant.
 
-Normal distr, also known as Gaussian, "Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Their importance is partly due to the central limit theorem. It states that, under some conditions, the average of many samples (observations) of a random variable with finite mean and variance is itself a random variable whose distribution converges to a normal distribution as the number of samples increases. Therefore, physical quantities that are expected to be the sum of many independent processes (such as measurement errors) often have distributions that are nearly normal..." aka. bell curve, even though many other distrs. are bell-shaped as well.
+The **normal distribution**, also known as Gaussian or the bell curve (even though many other distributions are bell-shaped too), is a very, if not the most, important distribution in statistics. *Generating independent random variables will converge to a normal distribution as the sample increases in size.* We observe that many phenomena in nature and society follow this pattern, and we often do not know the actual distribution of the population (remember that one of the reasons we use samples is because it's unfeasible or impossible to study the population itself as a whole), so we ascribe a normal distribution to them in our analysis.
+
+For the purposes seen above, it's conventional to divide the standard deviations of a normal distribution in percentages that follow the **68–95–99.7 rule**, also known as the **empirical rule**:
 
 ![Normal Distribution](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/standard_deviation_wikipedia.png)
 
 ### Coefficient of Variation
-"also known as relative standard deviation (RSD), is a standardized measure of dispersion of a probability distribution or frequency distribution. It is often expressed as a percentage,"
-
-CV is adimensional (lacks unit of measurement). In general, a CV <25% is a good indicator that the data is relatively homogenous (similarity of data points to each other, variability, how scattered they are, etc)
+This gives us a standardized measure of the dispersion of a distribution, most often in percentage form. It lacks units of measurement, but in general a value under 25% indicates that the data is fairly homogeneous (data points are similar to each other). It's also known as the *relative* standard deviation (RSD):
 
 ![Coefficient of Variation](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/coefficient_of_variation.png)
 
 ### Covariance
-"measure of the joint variability of two random variables", how much they walk together, so to speak.
-"If the greater values of one variable mainly correspond with the greater values of the other variable, and the same holds for the lesser values, (i.e., the variables tend to show similar behavior), the covariance is positive. [>0] In the opposite case, when the greater values of one variable mainly correspond to the lesser values of the other, (i.e., the variables tend to show opposite behavior), the covariance is negative [<0]. [IF IT IS (squiggly = 0) THE SAMPLES ARE UNCORRELATED] The sign of the covariance therefore shows the tendency in the linear relationship (correlation) between the variables."
-
-For two samples ![Sample x](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/sample_x.png) and ![Sample y](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/sample_y.png):
+We regularly need to look at more than just one variable. **Covariance** helps us measure the joint variability of two variables --- i.e. how much they walk together. When the higher and lower values of one variable mostly correspond with the higher and lower values of the other, covariance will be positive (greater than zero). Conversely, when the higher values of one variable mostly correspond with the lower values of the other, covariance will be negative (lower than zero). Lastly, if covariance is equal or near zero, the variables are uncorrelated. For two samples ![Sample x](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/sample_x.png) and ![Sample y](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/sample_y.png):
 
 ![Covariance](https://raw.githubusercontent.com/Frentan/statistics101.github.io/master/images/covariance.png)
 
